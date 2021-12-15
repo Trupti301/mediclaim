@@ -15,9 +15,9 @@
 		
 	<properties>
            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-           <sonar.host.url>http://20.204.10.240:9000</sonar.host.url>
+           <sonar.host.url>http://20.204.161.131:9000</sonar.host.url>
            <sonar.login>admin</sonar.login>
-           <sonar.password>admin123</sonar.password>
+           <sonar.password>admin</sonar.password>
         </properties>
 
 	<dependencies>
@@ -99,19 +99,19 @@
 	</dependencies>	
 
 	<scm>
-        <connection>scm:https://github.com/salagarsprabu/mediclaim.git</connection>
-        <url>https://github.com/baikunthar/mediclaim.git</url>
-        <developerConnection>scm:git:https://github.com/salagarsprabu/mediclaim.git</developerConnection>
+        <connection>scm:https://github.com/Trupti301/mediclaim.git</connection>
+        <url>https://github.com/Trupti301/mediclaim.git</url>
+        <developerConnection>scm:git:https://github.com/Trupti301/mediclaim.git</developerConnection>
       <tag>HEAD</tag>
       </scm>
 	<distributionManagement>
 	   <snapshotRepository>
              <id>nexus</id>               
-               <url>http://20.204.10.240:8081/repository/maven-snapshots</url>
+               <url>http://20.204.161.131:8081/repository/maven-snapshots</url>
            </snapshotRepository>
 	   <repository>
              <id>nexus</id>
-             <url>http://35.194.49.178:8081/nexus/content/repositories/releases</url>
+             <url>http://20.204.161.131:8081/nexus/content/repositories/releases</url>
        	    </repository>
 	</distributionManagement>
 	<reporting>
@@ -153,9 +153,9 @@
         		    <artifactId>flyway-maven-plugin</artifactId>
 			    <version>6.4.4</version>
 			    <configuration>
-                              <url>jdbc:mysql:20.51.189.249:3306</url>
+                              <url>jdbc:mysql:20.204.161.131:3306</url>
                               <user>claimuser1</user>
-		              <password>H@ckath0n</password>
+		              <password>123456</password>
 			      <schemas>
                                  <schema>claimdb</schema>
                               </schemas>
@@ -166,7 +166,7 @@
 		<artifactId>maven-release-plugin</artifactId>
 		<version>3.0.0-M1</version>
                 <configuration>
-		    <tagBase>https://github.com/salagarsprabu/mediclaim.git/tag</tagBase>
+		    <tagBase>https://github.com/Trupti301/mediclaim.git/tag</tagBase>
                      <releaseProfiles>release</releaseProfiles>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
